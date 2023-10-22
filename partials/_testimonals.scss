@@ -1,0 +1,44 @@
+
+#testimonals{
+    width: $container-lg;
+  
+    .swiper-wrapper{
+        // flex-direction:column;
+        .swiper-slide{
+            @include gradientBackground;
+            margin-bottom: 4rem;
+            padding: 1.5rem 2rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            border-radius: 0.9rem;
+            p{
+                margin-bottom: 1.5rem;
+            }
+            .patient{
+                display: flex;
+            align-items: center;
+            gap: 1rem;
+            }
+            .avatar{
+                width: 2.5rem;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                overflow: hidden;                                   
+            }
+        }
+    }
+    .swiper-pagination-bullent{
+        background: $primary-color;
+        
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    #testimonals{
+    .swiper-wrapper{
+        .swiper-slide
+        {padding: 1.5rem;}
+    }
+    }
+}
